@@ -40,7 +40,8 @@ body {
   to { opacity: 1; transform: scale(1); }
 }
 
-.controls {
+
+  controls {
   position: absolute;
   top: 50%;
   left: 0;
@@ -51,25 +52,22 @@ body {
   transform: translateY(-50%);
   padding: 0 20px;
   box-sizing: border-box;
-  pointer-events: none; /* allow clicks to go through */
+  pointer-events: none;
 }
 
 .controls button {
-  pointer-events: all; /* enable click on buttons */
-  padding: 10px 20px;
-  font-size: 24px;
-  background: #cc79ff;
-  color: white;
+  pointer-events: all;
+  font-size: 32px;
+  background: transparent;
+  color: #9c27b0;
   border: none;
-  border-radius: 50%;
   cursor: pointer;
-  transition: background 0.3s, transform 0.2s;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, color 0.3s;
 }
 
 .controls button:hover {
-  background: #a94bc2;
-  transform: scale(1.1);
+  color: #6a1b9a;
+  transform: scale(1.2);
 }
 
 
