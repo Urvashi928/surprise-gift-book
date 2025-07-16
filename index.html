@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take a Deep Breath...</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Step 1: Loading Screen -->
+  <div id="loader" class="screen">
+    <h1 class="fade-in">Take a deep breath...</h1>
+  </div>
+
+  <!-- Step 2: First Popup -->
+  <div id="popup1" class="popup">
+    <h2>Wanna know a secret? 💌</h2>
+    <button onclick="showPopup2()">Click here to know</button>
+  </div>
+
+  <!-- Step 3: Love Question Popup -->
+  <div id="popup2" class="popup">
+    <h2>Do you love me? 💖</h2>
+    <button onclick="handleAnswer('yes')">Yes</button>
+    <button onclick="handleAnswer('no')">No</button>
+  </div>
+
+  <!-- Step 4: Guilt Trap Message -->
+  <div id="popup3" class="popup">
+    <h2>Aww, don’t lie 🥺</h2>
+    <p>You know you do!</p>
+    <button onclick="goBackToLoveQuestion()">Go Back</button>
+  </div>
+
+  <!-- Step 5: Surprise Popup -->
+  <div id="popup4" class="popup">
+    <h2>Yayyy! 💕</h2>
+    <p>You just made my heart smile 💓</p>
+    <button onclick="goToPuzzle()">Ready for a surprise?</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #f5e3ff, #e4b9f5);
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🌬️ Loading Screen */
+#loader {
+  text-align: center;
+}
+
+.fade-in {
+  font-size: 2.5rem;
+  color: #8b3de4;
+  animation: fadeIn 2.5s ease-in-out forwards, shimmer 5s infinite;
+  text-shadow: 0 0 8px #fff;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes shimmer {
+  0%, 100% { color: #8b3de4; }
+  50% { color: #c577f5; }
+}
+
+/* 💌 Popup Base Style */
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fef6ff;
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(191, 148, 255, 0.4);
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  max-width: 90%;
+  width: 320px;
+}
+
+.popup.show {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+.hidden {
+  display: none;
+}
+
+.popup h2 {
+  margin: 0;
+  font-size: 1.9rem;
+  color: #7a1fa2;
+}
+
+.popup p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* 💫 Magical Button Style */
+.popup button {
+  background: linear-gradient(135deg, #d7a7ff, #b96fff);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.7rem;
+  border-radius: 30px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(155, 89, 182, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.popup button:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 25px rgba(155, 89, 182, 0.5);
+}
+
+.hidden {
+  display: none;
+}

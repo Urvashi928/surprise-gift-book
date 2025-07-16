@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e4b9f5, #fff0fb);
+  font-family: 'Dancing Script', cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.puzzle-heading {
+  font-size: 1.8rem;
+  color: #943fc3;
+  margin-bottom: 40px;
+}
+
+.heart {
+  font-size: 4rem;
+  cursor: grab;
+  transition: transform 0.2s ease;
+}
+
+.heart:active {
+  transform: scale(1.1);
+}
+
+.dropzone {
+  margin-top: 60px;
+  padding: 60px;
+  border: 3px dashed #ba68c8;
+  border-radius: 25px;
+  background: #fff0fb;
+  box-shadow: 0 0 20px rgba(186, 104, 200, 0.3);
+  font-size: 1.2rem;
+  color: #722e92;
+}
